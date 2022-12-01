@@ -1,7 +1,7 @@
 body {
     height: 100vh;
-    width: 100vw;
-    margin: 0;
+    max-width: 100%;
+    margin-left: 0;
     background-image: url(./media/bobbackground.jpg);
     background-size: cover;
     background-position: center;
@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
 }
 
 
@@ -101,9 +100,10 @@ main article:nth-child(1) {
     border: solid 1px white;
     color: white;
     padding-left: 1vw;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .catch_a_fire_titles h1 {
@@ -121,8 +121,14 @@ main article:nth-child(1) {
     font-family: "Barlow Semi Condensed"
 }
 
+.album_description p {
+    font-family: "Barlow Semi Condensed";
+    font-size: 0.9vw;
+}
+
 .musicians1 {
     font-family: "Barlow Semi Condensed";
+    font-size: 0.9vw;
 }
 
 .musicians1 ul {
@@ -133,6 +139,44 @@ main article:nth-child(1) {
 .album_data {
     grid-row: 1;
     grid-column: 1 / 2;
+}
+
+.cover {
+    margin-top: 1vw;
+    justify-self: center;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+.show_not_hover {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.show_not_hover:hover {
+    opacity: 0%;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.show_hover {
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    grid-column: 2;
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.show_hover:hover {
+    z-index: 2;
 }
 
 /* ATT NOTERA: Jag har gjort en Grid som är uppdelad i 2 kolumner som är 1fr var. Placera inom dem!*/
