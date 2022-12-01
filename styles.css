@@ -29,18 +29,20 @@ body {
 
 header {
     margin-left: 2vw;
-    font-family: "Bungee Outline";
+    font-family: "Bungee Shade";
     color: white;
-    font-size: 2vw;
+    font-size: 3vw;
+    margin-top: -7vw;
 }
 
 .navmenu {
     display: flex;
     font-size: 2vw;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 4vw;
-    margin: 0 5vw 0 5vw;
+    gap: 0.5vw;
+    margin-top: -2vw;
 }
 
 .navmenu div {
@@ -48,12 +50,12 @@ header {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.2);
-    font-size: 1.7vw;
-    width: 16vw;
-    height: 4vw;
+    font-size: 1.9vw;
+    width: 17vw;
+    height: 5vw;
     text-align: center;
     border-radius: 15px;
-    font-family: "Barlow Condensed";
+    font-family: "Barlow Semi Condensed";
 }
 
 .navmenu div:hover {
@@ -69,11 +71,19 @@ header {
     box-shadow: 0 0 3px 3px white;
 }
 
-nav .marked:hover {
-    font-weight: bold;
+nav .marked {
     border: rgba(255, 255, 255, 80%) solid 0.5px;
     box-shadow: 2px white;
     box-shadow: 0 0 3px 3px white;
+}
+
+nav .marked:hover {
+    border: rgba(255, 255, 255, 80%) solid 0.5px;
+    box-shadow: 2px white;
+    box-shadow: 0 0 3px 3px white;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+    color: black;
 }
 
 
@@ -96,11 +106,17 @@ main article:nth-child(1) {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-article div div h1 {
+.catch_a_fire_titles h1 {
     font-family: "Bungee Outline";
-    font-size: 2vw;
+    font-size: 2.5vw;
+    margin-top: -0.5vw;
+    font-weight: lighter;
 }
 
-article div div h2 {
-    font-size: 1.5vw;
+.catch_a_fire_titles h2 {
+    font-size: 1.6vw;
+    margin-top: -4vw;
+    font-weight: bold;
+    word-spacing: 0.1vw;
+    font-family: "Barlow Semi Condensed"
 }
