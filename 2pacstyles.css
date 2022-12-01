@@ -1,0 +1,914 @@
+body {
+    width: 100vw;
+    height: auto;
+    background-image: url(./media/2pacbackground-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: "Bungee Outline";
+}
+
+header h1 {
+    margin-left: 30px;
+    font-family: "Bungee Shade";
+    margin-bottom: 100px;
+}
+
+div h1 {
+    font-size: 7vh;
+}
+
+body>div:first-child {
+    background-color: rgba(0, 0, 0, 50%);
+    width: 95%;
+    margin-top: 10%;
+    border-radius: 10px;
+    display: flex;
+}
+
+div>nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    gap: 5px;
+}
+
+nav>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21vw;
+    height: 90%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 70%);
+    font-family: "Barlow Condensed";
+    font-size: 3vh;
+    margin-bottom: 50px;
+}
+
+nav>div:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+nav .marked {
+    background-color: rgba(255, 255, 255, 70%);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: rgba(255, 255, 255, 80%) solid 3px;
+    box-shadow: 10px white;
+    box-shadow: 0 0 3px 3px white;
+}
+
+nav .marked:hover {
+    background-color: rgba(255, 255, 255, 70%);
+    color: black;
+    border: rgba(255, 255, 255, 80%) solid 3px;
+    box-shadow: 5px white;
+    box-shadow: 0 0 3px 3px white;
+    cursor: default;
+}
+
+body article:nth-child(1) {
+    /*First album section*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+    border: solid 1px white;
+    margin-top: 25px;
+    width: 90%;
+    color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.album_data p+ul {
+    list-style: none;
+}
+
+.album_data h2 {
+    position: relative;
+    bottom: 34px;
+    font-size: 3vh;
+}
+
+
+.album_data {
+    grid-column: 1 / 3;
+    padding-left: 10px;
+}
+
+.album_description {
+    margin-top: 80px;
+    font-size: 2vh;
+}
+
+.cover {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 2;
+    width: 100%;
+    height: 82%;
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+    margin-top: 10px;
+    margin-right: 15px;
+    align-self: start;
+    justify-self: end;
+}
+
+img {
+    height: 100%;
+    width: 70%;
+    border-radius: 20px;
+    justify-self: end;
+}
+
+.cover img:nth-child(2) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    z-index: 1;
+}
+
+.cover img:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.cover img:nth-child(2):hover {
+    opacity: 0%;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.song_list {
+    grid-column: 4 / 6;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    height: 30vh;
+    width: 100%;
+    font-size: 2vh;
+    position: relative;
+    right: 28px;
+    bottom: 68px;
+}
+
+.song_list ul {
+    list-style-type: decimal;
+}
+
+.song_list h2 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.song_list div:nth-child(1) {
+    background-color: rgba(0, 0, 0, 80%);
+    justify-self: left;
+    width: 100%;
+    border-radius: 0 0 0 30px;
+}
+
+.song_list div:nth-child(2) {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 0px 0px 30px 0px;
+}
+
+/*nedre delen av första section*/
+
+.anecdotes {
+    list-style: none;
+    grid-row: 2;
+    grid-column: 1 / 6;
+    height: 60.5%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    text-align: left;
+    align-self: end;
+    color: black;
+    gap: 10px;
+    margin-right: 10px;
+    font-size: 2vh;
+}
+
+.top_right_90 {
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 25px 0 25px 25px;
+    padding: 15px;
+    color: white;
+}
+
+.two_wide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 5;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 25px 25px 25px 0;
+    background-color: rgba(0, 0, 0, 80%);
+    color: white;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    background-image: url(./media/producer.jpg);
+    grid-column: 5 / 6;
+    grid-row: 1;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    color: black;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px white;
+    color: black;
+    background-position: center;
+    border-radius: 0 25px 25px 25px;
+}
+
+.bottom_right_90 {
+    height: 100%;
+    width: 100%;
+    grid-column: 6 / 7;
+    grid-row: 1;
+    background-color: rgba(0, 0, 0, 80%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 25px 25px 0 25px;
+}
+
+/*HÄR SLUTAR FÖRSTA SECTION */
+
+
+/*SECTION TWO*/
+
+#sevendaytheory {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+    border: solid 1px white;
+    margin-top: 25px;
+    width: 90%;
+    color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.album_data2 p+ul {
+    list-style-type: none;
+}
+
+.album_data2 {
+    grid-column: 1 / 3;
+    padding-left: 10px;
+}
+
+.album_data2 h2 {
+    position: relative;
+    bottom: 34px;
+    font-size: 3vh;
+}
+
+.album_description2 {
+    margin-top: 80px;
+    font-size: 2vh;
+}
+
+.cover2 {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 2;
+    width: 100%;
+    height: 82%;
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    margin-top: 10px;
+    margin-right: 15px;
+    align-self: start;
+    justify-self: end;
+}
+
+.cover2 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.cover2 img:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: 1;
+}
+
+.cover2 img:nth-child(2) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.cover2 img:nth-child(1):hover {
+    opacity: 0%;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.song_list2 {
+    grid-column: 4 / 6;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    height: 30vh;
+    width: 100%;
+    font-size: 2vh;
+    position: relative;
+    margin-top: 20px;
+    right: 17px;
+    bottom: 75px;
+    font-size: 2vh;
+}
+
+.song_list2 ul {
+    list-style-type: decimal;
+}
+
+.song_list2 h2 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.song_list2 div:nth-child(1) {
+    background-color: rgba(0, 0, 0, 80%);
+    justify-self: left;
+    width: 100%;
+    border-radius: 0 0 0 30px;
+}
+
+.song_list2 div:nth-child(2) {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 0px 0px 30px 0px;
+}
+
+.anecdotes2 {
+    margin-left: -30px;
+    list-style: none;
+    grid-row: 2;
+    grid-column: 1 / 6;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-self: end;
+    color: black;
+    gap: 2px;
+    flex-grow: 1;
+    margin-right: 3px;
+    font-size: 2vh;
+}
+
+.two_wide2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 25px 0 25px 25px;
+    padding: 15px;
+    color: white;
+}
+
+.top_left_902 {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 0 25px 25px 25px;
+    padding: 15px;
+    color: white;
+}
+
+.image2 {
+    background-image: url(./media/tupacmoment-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.bottom_right_902 {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 25px 25px 0px 25px;
+    padding: 15px;
+    color: white;
+}
+
+footer {
+    color: white;
+    margin-top: 75px;
+    font-size: 2vh;
+}
+
+/*Responsiv FONT på hemsidan*/
+
+@media (min-width: 1111px) {
+
+    .album_description p:nth-child(1) {
+        font-size: 16.5px;
+    }
+
+    div ul {
+        font-size: 16px;
+    }
+
+    div h1 {
+        font-size: 45px;
+    }
+
+    div h2 {
+        font-size: 15px;
+        ;
+    }
+}
+
+@media (max-width: 900px) {
+
+    p {
+        font-size: 15px;
+    }
+}
+
+
+
+/*Repsonsiv sida anpassad för en TABLET */
+
+@media (max-width: 800px) {
+
+
+    /*2Pacalypse section*/
+    body {
+        margin-bottom: 50px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .cover img:nth-child(2):hover {
+        opacity: 100%;
+        transition: none;
+    }
+
+    .show_hover {
+        display: none;
+    }
+
+
+    .cover {
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+        height: 100%;
+        width: 90%;
+        justify-self: start;
+        align-self: end;
+        margin-left: 10px;
+    }
+
+    .cover img {
+        width: 100%;
+        height: 120%;
+        justify-self: start;
+    }
+
+    .song_list {
+        display: flex;
+        flex-direction: column;
+        grid-column: 4 / 6;
+        grid-row: 1 / 4;
+        align-self: start;
+        top: 1px;
+        font-size: 11px;
+        margin-left: 5px;
+    }
+
+    .song_list div:first-child {
+        border-radius: 0px 25px 0px 0px;
+    }
+
+    .album_data {
+        grid-row: 4;
+        grid-column: 1 / 5;
+        margin-top: 30px;
+    }
+
+    .anecdotes {
+        grid-row: 5;
+        align-self: start;
+        margin-left: 15px;
+        box-sizing: border-box;
+        height: 80%;
+        gap: 10px;
+        justify-self: start;
+        margin-left: -20px;
+    }
+
+    .image {
+        width: 15vw;
+        height: 38vh;
+        background-size: cover;
+        grid-row: 2;
+        grid-column: 3;
+        align-self: end;
+    }
+
+    .top_right_90 {
+        grid-row: 1;
+        grid-column: 4 / 7;
+        position: relative;
+        left: 30px;
+        bottom: 10px;
+    }
+
+    .two_wide {
+        width: 25vw;
+        grid-row: 1;
+        grid-column: 4 / 5
+    }
+
+    .bottom_right_90 {
+        grid-column: 4;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+        justify-self: end;
+    }
+
+    .bottom_left_90 {
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
+
+    /* SEVEN DAY THEORY SECTION */
+
+    #sevendaytheory {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+    }
+
+    .cover2 {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        height: 85%;
+        width: 90%;
+        justify-self: start;
+        align-self: start;
+        margin-left: 10px;
+    }
+
+    .cover2 img {
+        width: 100%;
+        height: 100%;
+        justify-self: start;
+    }
+
+    .cover2 img:nth-child(1):hover {
+        opacity: 100%;
+        transition-property: none;
+    }
+
+    .cover2 img:nth-child(2) {
+        display: none;
+    }
+
+    .song_list2 {
+        display: flex;
+        flex-direction: column;
+        grid-column: 4 / 6;
+        grid-row: 1;
+        align-self: start;
+        margin-left: 5px;
+        top: -8px;
+        font-size: 11px;
+        gap: 10px;
+    }
+
+    .album_data2 {
+        grid-row: 2;
+        grid-column: 1 / 5;
+        grid-row: 2;
+    }
+
+    .anecdotes2 {
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 4;
+        grid-row: 2;
+        grid-row: 3 / 4;
+        align-self: start;
+        box-sizing: border-box;
+        height: 80%;
+        gap: 35px;
+    }
+
+    .image2 {
+        height: 100%;
+        background-size: cover;
+        grid-row: 2;
+        grid-column: 3 / 5;
+        width: 55%;
+        border-radius: 25px;
+
+    }
+
+    .top_left_902 {
+        width: 80%;
+    }
+
+
+
+    .bottom_right_902 {
+        grid-column: 4;
+        grid-row: 2;
+        width: 80%;
+        height: 20vh;
+    }
+
+    div div header h1 {
+        color: white;
+    }
+
+    .album_data h2 {
+        font-size: 2.2vh;
+    }
+
+    .album_data2 h2 {
+        font-size: 2.2vh;
+    }
+
+
+    * div h1 {
+        font-size: 5vh;
+    }
+
+    footer {
+        color: white;
+        margin-top: 75px;
+        font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header h1 {
+        text-align: center;
+        background-color: black;
+        border-radius: 15px;
+    }
+
+    body div:nth-child(1) {
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    nav div {
+        font-size: 2vh;
+    }
+
+    nav div:first-child {
+        background-color: rgba(255, 255, 255, 70%);
+    }
+
+    nav div:first-child:hover {
+        background-color: black;
+    }
+
+    #tupacalypse {
+        background-color: rgba(0, 0, 0, 50%);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 0.5 1fr;
+        box-sizing: border-box;
+    }
+
+    .cover {
+        height: 100%;
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1 / 5;
+    }
+
+    .cover img:nth-child(2) {
+        height: 100%;
+        width: 95%;
+    }
+
+    .song_list {
+        width: 80vw;
+        flex-direction: row;
+        grid-column: 1 / 3;
+        grid-row: 2;
+        position: relative;
+        left: 10px;
+        margin-top: 5px;
+    }
+
+    .song_list div:nth-child(1) {
+        border-radius: 0 0 0 25px;
+    }
+
+    .song_list div:nth-child(2) {
+        border-radius: 0 0 25px 0;
+    }
+
+    .album_data {
+        grid-row: 3 / 3;
+        margin-top: -25px;
+    }
+
+    /* FXA HELA ANECDOTES */
+    .anecdotes {
+        width: 100%;
+        height: 95%;
+        align-self: start;
+        grid-row: 4;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 1.5vh;
+    }
+
+    .two_wide {
+        width: 60%;
+        height: 40%;
+        order: 2;
+
+    }
+
+    .bottom_right_90 {
+        width: 30%;
+        height: 45%;
+        order: 1;
+    }
+
+
+
+    .phone_empty {
+        order: 3;
+        height: 50px;
+        width: 20%;
+    }
+
+    .top_right_90 {
+        order: 5;
+        width: 38%;
+        height: 35%;
+        font-size: 1.2vh;
+        text-align: justify
+    }
+
+    .top_left_90 {
+        height: 50%;
+        width: 25%;
+        order: 4;
+    }
+
+    #sevendaytheory {
+        background-color: rgba(0, 0, 0, 50%);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 0.5 1fr;
+        box-sizing: border-box;
+    }
+
+    .cover2 {
+        height: 100%;
+        width: 95%;
+        grid-row: 1;
+        grid-column: 1 / 5;
+    }
+
+    .cover2 img:nth-child(2) {
+        height: 100%;
+        width: 100%;
+    }
+
+    .song_list2 {
+        width: 80vw;
+        flex-direction: row;
+        grid-column: 1 / 3;
+        grid-row: 2;
+        position: relative;
+        left: 10px;
+        margin-top: 25px;
+    }
+
+    .song_list2 div:nth-child(1) {
+        border-radius: 0 0 0 25px;
+    }
+
+    .song_list2 div:nth-child(2) {
+        border-radius: 0 0 25px 0;
+    }
+
+    .album_data2 {
+        grid-row: 2 / 3;
+        position: relative;
+        top: 230px;
+    }
+
+    .anecdotes2 {
+        width: 100%;
+        height: 95%;
+        align-self: start;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        grid-template-rows: 1fr;
+        font-size: 1.5vh;
+        gap: 10px;
+    }
+
+    .two_wide2 {
+        grid-column: 1 / 3;
+        height: 80%;
+        width: 130%;
+    }
+
+    .top_left_902 {
+        grid-row: 1;
+        grid-column: 4;
+        height: 75%;
+        width: 100%;
+    }
+
+    .image2 {
+        grid-column: 1 / 3;
+        height: 100%;
+        width: 150%;
+        align-self: start;
+    }
+
+    .bottom_right_902 {
+        grid-row: 2;
+        grid-column: 4;
+        height: 75%;
+        width: 100%;
+    }
+
+
+
+    footer {
+        font-size: 2vh;
+    }
+
+}
