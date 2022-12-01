@@ -31,7 +31,7 @@ header {
     margin-left: 2vw;
     font-family: "Bungee Outline";
     color: white;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .navmenu {
@@ -62,12 +62,22 @@ header {
     cursor: pointer;
 }
 
-.marked {
+.navmenu div:nth-child(2) {
     font-weight: bold;
     border: rgba(255, 255, 255, 80%) solid 0.5px;
     box-shadow: 2px white;
     box-shadow: 0 0 3px 3px white;
 }
+
+nav .marked:hover {
+    font-weight: bold;
+    border: rgba(255, 255, 255, 80%) solid 0.5px;
+    box-shadow: 2px white;
+    box-shadow: 0 0 3px 3px white;
+}
+
+
+/* FÖRST ALBUMET */
 
 main {
     margin-top: 5vw;
@@ -84,4 +94,13 @@ main article:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+article div div h1 {
+    font-family: "Bungee Outline";
+    font-size: 2vw;
+}
+
+article div div h2 {
+    font-size: 1.5vw;
 }
