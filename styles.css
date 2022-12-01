@@ -102,7 +102,7 @@ main article:nth-child(1) {
     color: white;
     padding-left: 1vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -120,3 +120,19 @@ main article:nth-child(1) {
     word-spacing: 0.1vw;
     font-family: "Barlow Semi Condensed"
 }
+
+.musicians1 {
+    font-family: "Barlow Semi Condensed";
+}
+
+.musicians1 ul {
+    list-style: none;
+    margin-bottom: 3vw;
+}
+
+.album_data {
+    grid-row: 1;
+    grid-column: 1 / 2;
+}
+
+/* ATT NOTERA: Jag har gjort en Grid som är uppdelad i 2 kolumner som är 1fr var. Placera inom dem!*/
