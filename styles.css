@@ -48,7 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.6);
     font-size: 1.9vw;
     width: 17vw;
     height: 5vw;
@@ -80,13 +80,13 @@ nav .marked:hover {
     border: rgba(255, 255, 255, 80%) solid 0.5px;
     box-shadow: 2px white;
     box-shadow: 0 0 3px 3px white;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.6);
     cursor: default;
     color: black;
 }
 
 
-/* FÖRST ALBUMET */
+/* FÖRSTA ALBUMET */
 
 main {
     margin-top: 5vw;
@@ -142,13 +142,14 @@ main article:nth-child(1) {
 }
 
 .cover {
+    margin-right: -5vw;
     margin-top: 1vw;
     justify-self: center;
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr;
-    width: 90%;
-    height: 90%;
+    width: 75%;
+    height: 75%;
 }
 
 .show_not_hover {
@@ -179,10 +180,31 @@ main article:nth-child(1) {
     z-index: 2;
 }
 
+.song_list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5vw;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    margin-right: -5vw;
+}
+
 .song_list div {
     background-color: green;
     width: 12vw;
     height: 10.5vw;
+}
+
+.song_list div h2 {
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 1.2vw;
+}
+
+.song_list div ul {
+    list-style: decimal;
+
 }
 
 .song_list div:nth-child(1) {
