@@ -213,6 +213,7 @@ main article:nth-child(1) {
     justify-content: start;
     position: relative;
     right: 0.7vw;
+    bottom: 1vw;
 }
 
 .song_list {
