@@ -207,8 +207,12 @@ main article:nth-child(1) {
 
 .song_list div ul {
     list-style: decimal;
-    font-size: 1vw;
-    text-align: justify;
+    font-size: 0.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    right: 0.7vw;
 }
 
 .song_list {
@@ -231,6 +235,113 @@ main article:nth-child(1) {
     border-radius: 30px 30px 30px 0px;
 }
 
+.anecdotes {
+    align-self: end;
+    list-style: none;
+    grid-row: 2;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    right: 2vw;
+    bottom: 1vw;
+    margin: 0;
+    padding-left: 1.3vw;
+}
 
+.anecdotes li:nth-child(2) {
+    display: none;
+}
 
-/* ATT NOTERA: Jag har gjort en Grid som är uppdelad i 2 kolumner som är 1fr var. Placera inom dem!*/
+.anecdotes li:nth-child(4) {
+    display: none;
+}
+
+.anecdotes li:nth-child(5) {
+    display: none;
+}
+
+.anecdotes li {
+    font-family: "Barlow Condensed";
+    font-size: 1vw;
+}
+
+.anecdotes li:nth-child(1) {
+    box-sizing: border-box;
+    padding: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    height: 11.5vw;
+    width: 10vw;
+    color: white;
+    background-color: green;
+    align-self: end;
+    justify-self: start;
+    grid-row: 2;
+    grid-column: 1;
+    position: relative;
+    left: 0.7vw;
+    border-radius: 15px 0px 15px 15px;
+}
+
+.anecdotes li:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+    background-color: green;
+    padding: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24vw;
+    height: 11.5vw;
+    justify-self: end;
+    align-self: end;
+    position: relative;
+    left: 0.7vw;
+    box-sizing: border-box;
+    border-radius: 18px 18px 18px 0px;
+}
+
+.anecdotes li:nth-child(6) {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    text-shadow: 1px 1px blue;
+    font-size: 0.9vw;
+    width: 9vw;
+    height: 11.5vw;
+    grid-row: 2;
+    grid-column: 3;
+    position: relative;
+    left: 1vw;
+    justify-self: start;
+    align-self: end;
+    border-radius: 0px 15px 15px 15px;
+    background-image: url(./media/chrisblackwell.webp);
+    background-position: right;
+    background-size: cover;
+}
+
+.anecdotes li:nth-child(7) {
+    grid-row: 2;
+    grid-column: 3;
+    justify-self: end;
+    align-self: end;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 11.5vw;
+    width: 10vw;
+    padding: 5.5vw 1vw 5.5vw 1vw;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0px 15px;
+}
