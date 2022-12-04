@@ -610,3 +610,5 @@ main {
     box-sizing: border-box;
     border-radius: 15px 15px 0px 15px;
 }
+
+/* FIXA FÖRSTA MEDIA QUERY PÅ FONTEN. Efter 900px i bredd så ska texten sluta minskas!!! */
