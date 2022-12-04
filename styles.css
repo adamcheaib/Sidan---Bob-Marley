@@ -375,6 +375,16 @@ main {
     font-family: "Barlow Semi Condensed"
 }
 
+.musicians2 {
+    font-family: "Barlow Semi Condensed";
+    font-size: 0.9vw;
+}
+
+.musicians2 ul {
+    list-style: none;
+    margin-bottom: 3vw;
+}
+
 .album_description2 {
     position: relative;
     top: 3vw;
@@ -505,21 +515,13 @@ main {
     grid-row: 2;
     grid-column: 1 / 4;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr;
     position: relative;
     right: 2vw;
     bottom: 1vw;
     margin: 0;
     padding-left: 1.3vw;
-}
-
-.anecdotes2 li:nth-child(2) {
-    display: none;
-}
-
-.anecdotes2 li:nth-child(4) {
-    display: none;
 }
 
 .anecdotes2 li:nth-child(5) {
@@ -539,7 +541,7 @@ main {
     justify-content: start;
     text-align: left;
     height: 11.5vw;
-    width: 20vw;
+    width: 21vw;
     color: white;
     background-color: green;
     align-self: end;
@@ -559,13 +561,13 @@ main {
     padding: 0.8vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 24vw;
+    justify-content: start;
+    width: 9vw;
     height: 11.5vw;
-    justify-self: end;
+    justify-self: start;
     align-self: end;
     position: relative;
-    left: 0.7vw;
+    left: 1vw;
     box-sizing: border-box;
     border-radius: 18px 18px 18px 0px;
 }
@@ -575,20 +577,21 @@ main {
     align-items: end;
     justify-content: center;
     text-align: center;
-    color: green;
+    color: white;
     font-weight: bold;
     text-shadow: 1px 1px blue;
     font-size: 0.9vw;
-    width: 9vw;
+    width: 24.4vw;
     height: 11.5vw;
     grid-row: 2;
-    grid-column: 3;
+    grid-column: 2;
     position: relative;
-    left: 1vw;
-    justify-self: start;
+    left: 5.5vw;
+    justify-self: end;
     align-self: end;
     border-radius: 0px 15px 15px 15px;
-    background-color: red;
+    background-image: url(./media/400\ years.jpg);
+    background-position: center;
 }
 
 .anecdotes2 li:nth-child(6) {
@@ -602,7 +605,7 @@ main {
     align-items: center;
     background-color: green;
     height: 11.5vw;
-    width: 10vw;
+    width: 8.5vw;
     padding: 5.5vw 1vw 5.5vw 1vw;
     box-sizing: border-box;
     border-radius: 15px 15px 0px 15px;
