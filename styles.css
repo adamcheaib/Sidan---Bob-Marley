@@ -1,7 +1,6 @@
 body {
     height: 100vh;
     max-width: 100%;
-    margin-left: 0;
     background-image: url(./media/bobbackground.jpg);
     background-size: cover;
     background-position: center;
@@ -16,10 +15,12 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 5vw;
+    background-color: rgba(0, 0, 0, 30%);
+    border-radius: 2vw;
 }
 
 .firstsection {
-    background-color: rgba(0, 0, 0, 0.2);
+
     width: 75vw;
     display: flex;
     flex-direction: column;
@@ -94,6 +95,8 @@ main {
     margin-right: 3vw;
     padding-left: 1vw;
     padding-right: 1vw;
+    margin-bottom: 5vw;
+
 }
 
 #catch_a_fire {
@@ -104,6 +107,7 @@ main {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 1fr;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .catch_a_fire_titles h1 {
@@ -358,6 +362,7 @@ main {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 1fr;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .soul_rebel_titles h1 {
@@ -610,5 +615,29 @@ main {
     box-sizing: border-box;
     border-radius: 15px 15px 0px 15px;
 }
+
+@media (max-width: 1111px) {
+    header {
+        font-size: 33.1px;
+    }
+
+    .navmenu {
+        font-size: 15px;
+    }
+
+
+    .navmenu div {
+        font-size: 22px;
+    }
+
+    .catch_a_fire_titles h1 {
+
+        font-size: 28px;
+    }
+
+    /* Fortsätt från nummer 8 (av att söka på font)
+}
+
+
 
 /* FIXA FÖRSTA MEDIA QUERY PÅ FONTEN. Efter 900px i bredd så ska texten sluta minskas!!! */
