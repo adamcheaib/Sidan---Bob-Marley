@@ -131,6 +131,7 @@ main {
 }
 
 .musicians1 {
+    margin-top: 3vw;
     font-family: "Barlow Semi Condensed";
     font-size: 0.9vw;
 }
@@ -206,7 +207,7 @@ main {
 .song_list1 div h2 {
     font-size: 2vw;
     text-align: left;
-    margin-left: 1.2vw;
+    margin-left: 2vw;
 }
 
 .song_list1 div ul {
@@ -231,13 +232,15 @@ main {
 .song_list1 div:nth-child(1) {
     grid-row: 1;
     grid-column: 1;
-    border-radius: 0px 0px 0px 30px;
+    border-radius: 0px 0px 0px 25px;
+    text-align: left;
 }
 
 .song_list1 div:nth-child(2) {
     grid-row: 1;
     grid-column: 2;
-    border-radius: 0px 0px 30px 0px;
+    text-align: left;
+    border-radius: 0px 0px 25px 0px;
 }
 
 .anecdotes1 {
@@ -616,27 +619,49 @@ main {
     border-radius: 15px 15px 0px 15px;
 }
 
-@media (max-width: 1111px) {
-    header {
-        font-size: 33.1px;
-    }
+/*Font media query. Texten ska sluta växa från och med 1111px width.
+ Mellan 1111px och 900px så ska texten växa och minskas beroende på webbsidans storlek.
+  Mindre än 900px så ska texten SLUTA sjunka */
 
-    .navmenu {
-        font-size: 15px;
+/* @media (min-width: 1111px) {
+    header {
+        font-size: 35px;
     }
 
 
     .navmenu div {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .catch_a_fire_titles h1 {
-
-        font-size: 28px;
+        font-size: 45px;
     }
 
-    /* Fortsätt från nummer 8 (av att söka på font)
-}
+    .catch_a_fire_titles h2 {
+        font-size: 20px;
+    }
+
+    .musicians1 {
+        font-size: 16px;
+    }
+
+    .album_description p {
+        font-size: 16px;
+    }
+
+
+    .song_list1 div h2 {
+        font-size: 20px;
+    }
+
+    .song_list1 div ul {
+        font-size: 16px;
+    }
+
+    .anecdotes1 li {
+        font-size: 16px;
+    }
+}*/
 
 
 
