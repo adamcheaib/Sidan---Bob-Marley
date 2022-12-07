@@ -786,7 +786,41 @@ main {
     }
 
     .anecdotes1 {
-        margin-top: 10vw;
-        grid-row: 3/4;
+        margin-top: 8vw;
+        grid-row: 3;
+        grid-template-columns: 1fr 1fr;
     }
+
+    .anecdotes1 li:nth-child(1) {
+        grid-row: 1;
+        width: 13vw;
+        height: 14vw;
+    }
+
+    .anecdotes1 li:nth-child(3) {
+        height: 14vw;
+        width: 33vw;
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .anecdotes1 li:nth-child(6) {
+        height: 14vw;
+        left: 0;
+        grid-column: 1;
+        width: 11vw;
+        justify-self: end;
+    }
+
+    .anecdotes1 li:nth-child(7) {
+        height: 13.8vw;
+        grid-column: 2;
+        justify-self: start;
+        position: relative;
+        left: 0.5vw;
+    }
+
+
+
 }
