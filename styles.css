@@ -1131,6 +1131,7 @@ main {
         height: 50%;
         border-radius: 10px 0 10px 10px;
         align-self: start;
+        font-size: 2vw;
     }
 
     .anecdotes1 li:nth-child(3) {
@@ -1143,6 +1144,7 @@ main {
         border-radius: 10px 10px 10px 0;
         position: relative;
         left: 1vw;
+        font-size: 2vw;
     }
 
     .anecdotes1 li:nth-child(6) {
@@ -1162,6 +1164,7 @@ main {
         position: relative;
         left: 16vw;
         justify-self: center;
+        font-size: 2vw;
 
     }
 
