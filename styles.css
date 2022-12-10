@@ -115,6 +115,7 @@ main {
     border: solid 1px white;
     color: white;
     padding-left: 1vw;
+    padding-right: 1vw;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
@@ -372,6 +373,7 @@ main {
     border: solid 1px white;
     color: white;
     padding-left: 1vw;
+    padding-right: 1vw;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
@@ -481,6 +483,10 @@ main {
     grid-row: 1;
     height: 22vw;
     width: 25vw;
+}
+
+.song_list2 ul li:nth-child(6) {
+    display: none;
 }
 
 .song_list2 ul li:nth-child(7) {
@@ -873,9 +879,9 @@ main {
     .song_list2 {
         flex-direction: column;
         width: 32vw;
-        height: 25vw;
+        height: 35vw;
         position: relative;
-        top: 1vw;
+        top: 6vw;
     }
 
     .song_list2 div {
@@ -978,9 +984,15 @@ main {
         align-items: center;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     header {
         margin: -5vw 0 25vw 0;
-        font-size: 7vw;
+        font-size: 8vw;
         line-height: 1.2;
         text-align: center;
 
@@ -999,7 +1011,7 @@ main {
     }
 
     .navmenu div {
-        width: 23vw;
+        width: 19vw;
         height: 8vw;
         font-size: 2.8vw;
     }
@@ -1009,20 +1021,23 @@ main {
     }
 
     #catch_a_fire {
-        height: 100vw;
+        height: 145vw;
+        width: 75vw;
     }
 
     .cover {
         grid-column: 1 / 3;
         display: flex;
         height: 51vw;
-        width: 90vw;
+        width: 74vw;
         margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+        justify-self: center;
     }
 
     .show_not_hover1 {
-        width: 89vw;
+        width: 73vw;
         height: 51vw;
+        margin-top: 1vw;
         z-index: 1;
         border-radius: 15px 15px 0 0;
     }
@@ -1035,8 +1050,85 @@ main {
         display: none;
     }
 
+    .song_list1 {
+        position: relative;
+        top: 45vw;
+        margin: 0;
+        width: 100%;
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
 
+    .song_list1 div {
+        width: 100%;
+        height: 100%;
+    }
 
+    .song_list1 div h2 {
+        font-size: 3vw;
+        position: relative;
+        left: 1vw;
+    }
+
+    .song_list1 div ul {
+        width: 100%;
+        font-size: 2.3vw;
+        padding: 0;
+        position: relative;
+        left: 5vw;
+        bottom: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .album_data {
+        margin-top: 74vw;
+    }
+
+    .catch_a_fire_titles h1 {
+        font-size: 7vw;
+        position: relative;
+        bottom: 3.5vw;
+    }
+
+    .catch_a_fire_titles h2 {
+        position: relative;
+        bottom: 8vw;
+        font-size: 3.5vw;
+        margin-bottom: -4.5vw;
+    }
+
+    .musicians1 {
+        font-size: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    .album_description {
+        grid-column: 1 / 3;
+        width: 100%;
+    }
+
+    .album_description p {
+        font-size: 1.5vw;
+        width: 100%;
+    }
+
+    .anecdotes1 {
+        padding: 0;
+        right: 0;
+    }
+
+    .anecdotes1 li {
+        font-family: "Barlow Condensed";
+        font-size: 1.3vw;
+    }
+
+    .anecdotes1 li:nth-child(1) {
+        grid-row: 1 / 2;
+        width: 13vw;
+        height: 16vw;
+    }
 
     /* KOLLA VARFÖR DET FINNS HORISONTELLT SCROLL */
 
