@@ -1021,7 +1021,7 @@ main {
     }
 
     #catch_a_fire {
-        height: 145vw;
+        height: 153vw;
         width: 75vw;
     }
 
@@ -1117,6 +1117,7 @@ main {
     .anecdotes1 {
         padding: 0;
         right: 0;
+        grid-template-rows: 2fr 0.5fr;
     }
 
     .anecdotes1 li {
@@ -1127,8 +1128,15 @@ main {
     .anecdotes1 li:nth-child(1) {
         grid-row: 1 / 2;
         width: 13vw;
-        height: 16vw;
+        height: 75%;
     }
+
+    .anecdotes1 li:nth-child(3) {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+
 
     /* KOLLA VARFÖR DET FINNS HORISONTELLT SCROLL */
 
