@@ -127,7 +127,6 @@ main {
     font-family: "Bungee Outline";
     font-size: 4.2vw;
     margin-top: -0.5vw;
-    font-weight: lighter;
 }
 
 .catch_a_fire_titles h2 {
@@ -385,7 +384,6 @@ main {
     font-family: "Bungee Outline";
     font-size: 4.2vw;
     margin-top: -0.5vw;
-    font-weight: lighter;
 }
 
 .soul_rebel_titles h2 {
@@ -980,7 +978,7 @@ main {
         margin: 0;
         padding: 0;
         width: 100vw;
-        height: 100vw;
+        height: 157vw;
         align-items: center;
     }
 
@@ -1168,6 +1166,161 @@ main {
 
     }
 
+    /* Andra albumet */
+
+    #soul_rebel {
+        height: 157vw;
+        width: 75vw;
+    }
+
+    .cover2 {
+        grid-column: 1 / 3;
+        display: flex;
+        height: 51vw;
+        width: 74vw;
+        margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+        justify-self: center;
+    }
+
+    .show_not_hover2 {
+        width: 73vw;
+        height: 51vw;
+        margin-top: 1vw;
+        z-index: 1;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .show_not_hover2:hover {
+        opacity: 100%;
+    }
+
+    .show_hover2 {
+        display: none;
+    }
+
+    .song_list2 {
+        position: relative;
+        top: 45vw;
+        margin: 0;
+        width: 100%;
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+
+    .song_list2 div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .song_list2 div h2 {
+        font-size: 3vw;
+        position: relative;
+        left: 1vw;
+    }
+
+    .song_list2 div ul {
+        width: 100%;
+        font-size: 2.3vw;
+        padding: 0;
+        position: relative;
+        left: 5vw;
+        bottom: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .album_data2 {
+        margin-top: 74vw;
+        grid-column: 1 / 3;
+    }
+
+    .soul_rebel_titles h1 {
+        font-size: 7vw;
+        position: relative;
+        bottom: 3.5vw;
+    }
+
+    .soul_rebel_titles h2 {
+        position: relative;
+        bottom: 8vw;
+        font-size: 3.5vw;
+        margin-bottom: -4.5vw;
+    }
+
+    .musicians2 {
+        font-size: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    .album_description2 {
+        grid-column: 1 / 3;
+        width: 100%;
+    }
+
+    .album_description2 p {
+        font-size: 1.5vw;
+        width: 100%;
+    }
+
+    .anecdotes2 {
+        padding: 0;
+        right: 0;
+        display: grid;
+        grid-template-rows: 40vw;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+    .anecdotes2 li {
+        font-family: "Barlow Condensed";
+        font-size: 1.3vw;
+        grid-template-columns: 1fr 0.5fr;
+    }
+
+    .anecdotes2 li:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1;
+        width: 140%;
+        height: 50%;
+        border-radius: 10px 0 10px 10px;
+        align-self: start;
+        font-size: 2vw;
+    }
+
+    .anecdotes2 li:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: end;
+        align-self: start;
+        height: 50%;
+        width: 58%;
+        border-radius: 10px 10px 10px 0;
+        font-size: 2vw;
+    }
+
+    .anecdotes2 li:nth-child(5) {
+        height: 49%;
+        width: 140%;
+        font-size: 2.5vw;
+        justify-self: start;
+        grid-row: 1;
+        grid-column: 1;
+        left: 1vw;
+    }
+
+    .anecdotes2 li:nth-child(6) {
+        grid-row: 1;
+        grid-column: 2;
+        height: 49%;
+        width: 55%;
+        justify-self: end;
+        font-size: 2vw;
+
+    }
+
+    footer {
+        font-size: 2vw;
+    }
 
     /* KOLLA VARFÖR DET FINNS HORISONTELLT SCROLL */
 
