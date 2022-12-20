@@ -779,6 +779,7 @@ main {
 
     .musicians1 {
         font-size: 11px;
+        margin-bottom: 2vw;
     }
 
     .album_description p {
@@ -1262,7 +1263,8 @@ main {
     .anecdotes1 {
         padding: 0;
         right: 0;
-        grid-template-rows: 40vw;
+        grid-template-rows: 100%;
+        height: 27%;
     }
 
     .anecdotes1 li {
@@ -1424,8 +1426,9 @@ main {
         padding: 0;
         right: 0;
         display: grid;
-        grid-template-rows: 40vw;
+        grid-template-rows: 100%;
         grid-template-columns: 0.5fr 0.5fr;
+        height: 32%;
     }
 
     .anecdotes2 li {
