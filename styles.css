@@ -1488,3 +1488,14 @@ main {
     /* KOLLA VARFÖR DET FINNS HORISONTELLT SCROLL */
 
 }
+
+/* Kommentarer om vad jag har ändrat:
+
+Titles för Mac: Jag tog bort position: relative från titlarna. 
+Jag targetade själva containern för album titlarna. Det var något jag inte hade gjort.
+Samt att jag satte de i en Grid så att de håller sina positioner.
+
+Anecdotes: Jag tog bort 40vw höjden och ökade istället height på anecdotes containern och satte
+Grid-rows storleken på 100%.
+
+*/
